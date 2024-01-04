@@ -29,7 +29,7 @@ html{
 
 body{
     font-size: 16px; /* 1rem = 10px*/
-    font-family: 'Krub', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     background: rgb(93,224,251);
     background: linear-gradient(90deg, rgba(93,224,251,1) 17%, rgba(45,149,251,1) 65%, rgba(62,102,245,1) 98%);
 }
