@@ -1,9 +1,10 @@
 :root {
     --blanco: #ffffff;
     --oscuro: #212121;
-    --primario: #e9ce7c;
-    --secundaro: #0056a7;
-    --gris: #757575; 
+    --primario: #176B87;
+    --secundaro: #86B6F6;
+    --terciario: #B4D4FF;
+    --gris-clarito: #EEF5FF; 
 }
 /* Globales */
 html{
@@ -58,7 +59,7 @@ h1,h2,h3{
 }
 
 .boton{
-    background-color: var(--secundaro);
+    background-color: var(--primario);
     color: var(--blanco);
     padding: 1rem 3rem;
     margin-top: 3rem;
@@ -74,7 +75,7 @@ h1,h2,h3{
 
 .boton:hover{
     cursor: pointer;
-    background-color: var(--primario);
+    background-color: var(--secundaro);
     color: var(--oscuro);
 }
 @media (min-width: 768px){
