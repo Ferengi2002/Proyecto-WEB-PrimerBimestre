@@ -2,9 +2,10 @@
     --blanco: #ffffff;
     --oscuro: #212121;
     --primario: #176B87;
-    --secundaro: #86B6F6;
+    --secundario: #86B6F6;
     --terciario: #B4D4FF;
     --gris-clarito: #EEF5FF; 
+    --complementario:#FFD699;
 }
 /* Globales */
 html{
@@ -31,8 +32,7 @@ html{
 body{
     font-size: 16px; /* 1rem = 10px*/
     font-family: 'Quicksand', sans-serif;
-    background: rgb(93,224,251);
-    background: linear-gradient(90deg, rgba(93,224,251,1) 17%, rgba(45,149,251,1) 65%, rgba(62,102,245,1) 98%);
+    background: var(--gris-clarito);
 }
 h1{
     font-size: 3.8rem;
@@ -53,9 +53,13 @@ h1,h2,h3{
     color:#6495ed;
 }
 
-.contenedor{
-    max-width: 120rem;
-    margin: 0 auto;
+.contenedor-primario{
+    background-color: var(--terciario);
+
+}
+.contenedor-secundario{
+    background-color: var(--secundario);
+
 }
 
 .boton{
@@ -72,16 +76,25 @@ h1,h2,h3{
     text-align: center; 
     border: none;
 }
-
 .boton:hover{
     cursor: pointer;
-    background-color: var(--secundaro);
-    color: var(--oscuro);
+    background-color: var(--complementario);
+    color: var(--primario);
 }
+
+
 @media (min-width: 768px){
     .boton{
         width: auto;
     }
 }
 
+/* Seccion de Dashboard */
+
+.dashboard{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    margin-top: 2rem;
+}
 
