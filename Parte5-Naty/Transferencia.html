@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header></header>
+    <main>
+        <div>
+            Cuenta de Origen* :
+            <select>
+                <option value="">Seleccione una cuenta</option>
+                <option value="dos">1</option>
+                <option value="tres">2</option>
+                </select> <br>
+            
+            Cuenta de Destino* :
+            <select>
+                <option value="">Seleccione una cuenta</option>
+                <option value="dos">1</option>
+                <option value="tres">2</option>
+                </select> <br>
+            Monto $*: 
+            <input type="text" placeholder="Ingrese el monto" pattern="-?[0-9]+" title="Por favor ingrese un número válido" required><br>
+            Fecha:
+            <input type="date" placeholder="Ingrese la fecha" required><br>
+            Categoria:
+            <select>
+            <option value="">Seleccione una categoría</option>
+            <option value="dos">Nómina</option>
+            <option value="tres">Universidad</option>
+            <option value="cuatro">Efectivo</option>
+            </select> <br>
+            Concepto:
+            <textarea placeholder="Agregue una descripción"></textarea>
+        </div>
+        <div>
+            <button type="submit">Guardar</button>
+            <button type="submit">Cancelar</button>
+        </div>
+    </main>
+</body>
+</html>
