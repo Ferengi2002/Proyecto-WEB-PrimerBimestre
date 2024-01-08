@@ -190,5 +190,5 @@ h3 {
 .pie {
     position: fixed;
     bottom: 0;
-    height: 50px;
+    padding: 15px;
 }
