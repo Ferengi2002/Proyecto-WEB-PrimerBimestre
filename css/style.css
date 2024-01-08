@@ -164,10 +164,6 @@ h1,h2,h3{
     background: -webkit-radial-gradient(circle, hsla(180, 56%, 51%, 1) 24%, hsla(186, 60%, 40%, 1) 100%);
     
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#3BC7C7", endColorstr="#2998A4", GradientType=1 );
-
-    height: 40px;
-    padding: 5px;
-
 }
 
 .pie{
