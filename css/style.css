@@ -1,11 +1,11 @@
 :root {
     --blanco: #ffffff;
     --oscuro: #212121;
-    --primario: #176B87;
-    --secundario: #86B6F6;
-    --terciario: #B4D4FF;
-    --gris-clarito: #EEF5FF; 
-    --complementario:#FFD699;
+    --primario: #1F6F78;
+    --secundario: #118A7E;
+    --terciario: #3BAEA0;
+    --claro: #93E4C1; 
+    --fondo: #F0F8FF;
 }
 /* Globales */
 html{
@@ -32,7 +32,7 @@ html{
 body{
     font-size: 16px; /* 1rem = 10px*/
     font-family: 'Quicksand', sans-serif;
-    background: var(--gris-clarito);
+    background-color: var(--fondo);
 }
 h1{
     font-size: 3.8rem;
@@ -59,29 +59,52 @@ h1,h2,h3{
 }
 .contenedor-secundario{
     background-color: var(--secundario);
-
+}
+.contenedor-terciario{
+    background-color: var(--claro);
 }
 
 .boton{
-    background-color: var(--primario);
-    color: var(--blanco);
-    padding: 1rem 3rem;
-    margin-top: 3rem;
-    font-size: 2rem;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: bold;
+    align-items: center;
+    appearance: none;
+    background-image: radial-gradient(100% 100% at 100% 0, #00fcfc 0, #1F6F78 100%);
+    border: 0;
     border-radius: .5rem;
-    width: 90%;
-    text-align: center; 
-    border: none;
+    box-shadow: rgba(45, 35, 66, .4) 0 1px 3px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    height: 4rem;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding: 2rem 3rem;
+    margin: 0.5rem;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s,transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow,transform;
+    font-weight: 600;
+    font-size: 2rem;
 }
 .boton:hover{
     cursor: pointer;
-    background-color: var(--complementario);
-    color: var(--primario);
+    box-shadow: rgba(45, 33, 70, 0.4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #1F6F78 0 -3px 0 inset;
+    transform: translateY(-2px);
 }
-
+.boton:focus {
+    box-shadow: #1F6F78 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #1F6F78 0 -3px 0 inset;
+}
+.boton:active {
+    box-shadow: #1F6F78 0 3px 7px inset;
+    transform: translateY(2px);
+  }
 
 @media (min-width: 768px){
     .boton{
