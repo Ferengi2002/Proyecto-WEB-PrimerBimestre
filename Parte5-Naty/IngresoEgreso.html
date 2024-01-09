@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ingresos / Egresos</title>
 
     <!-- PRELOAD -->
     <link rel="preload" href="css/normalize.css" as="style">
@@ -16,9 +16,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
-
-    <!--MIS ESTILOS-->
-    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>        
@@ -34,26 +31,39 @@
         </div>
     </nav>
     <main>
-        <div>
-            Cuenta* :
-            <input type="text" placeholder="Ingrese su cuenta"><br>
-            Monto* : 
-            <input type="text" placeholder="Ingrese el monto" pattern="-?[0-9]+" title="Por favor ingrese un número válido" required><br>
-            Fecha:
-            <input type="date" placeholder="Ingrese la fecha" required><br>
-            Categoria:
-            <select>
-            <option value="">Seleccione una categoría</option>
-            <option value="dos">Nómina</option>
-            <option value="tres">Universidad</option>
-            <option value="cuatro">Efectivo</option>
-            </select> <br>
-            Concepto:
-            <textarea placeholder="Agregue una descripción"></textarea>
-        </div>
-        <div>
-            <button type="submit">Guardar</button>
-            <button type="submit">Cancelar</button>
+        <div class="conteiner d-inline-flexbox text-center mt-5 mx-5 p-5 bg-white text-center">
+            <h1>Ingresos / Egresos</h1>
+            <div class="mt-3 mb-0">
+                <div class="mt-3 mb-0">
+                    Cuenta* :
+                    <input type="text" placeholder="Ingrese su cuenta">
+                </div>
+                <div class="mt-3 mb-0">
+                    Monto* : 
+                <input type="text" placeholder="Ingrese el monto" pattern="-?[0-9]+" title="Por favor ingrese un número válido" required> 
+                </div>
+                <div class="mt-3 mb-0">
+                Fecha:
+                <input type="date" placeholder="Ingrese la fecha" required><br>
+                </div>
+                <div class="mt-3 mb-0">
+                Categoria:
+                    <select>
+                        <option value="">Seleccione una categoría</option>
+                        <option value="dos">Nómina</option>
+                        <option value="tres">Universidad</option>
+                        <option value="cuatro">Efectivo</option>
+                    </select>
+                </div>
+                <div class="mt-3 mb-0">
+                Concepto:
+                <textarea placeholder="Agregue una descripción"></textarea>
+                </div>
+            </div>
+            <div class="mt-3 mb-0">
+                <button type="submit">Guardar</button>
+                <button type="submit">Cancelar</button>
+            </div>
         </div>
     </main>
 </body>
