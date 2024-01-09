@@ -86,7 +86,7 @@ h3 {
 .boton {
     align-items: center;
     appearance: none;
-    background-image: radial-gradient(100% 100% at 100% 0, #00fcfc 0, #1F6F78 100%);
+    background-image: radial-gradient(100% 100% at 100% 0, #00fcfc 0, #5698f9 100%);
     border: 0;
     border-radius: .5rem;
     box-shadow: rgba(45, 35, 66, .4) 0 1px 3px, rgba(45, 35, 66, .3) 0 7px 13px -3px, rgba(58, 65, 111, .5) 0 -3px 0 inset;
@@ -140,7 +140,7 @@ h3 {
 .boton-dash {
     align-items: center;
     appearance: none;
-    background-image: radial-gradient(100% 100% at 100% 0, #00fcfc 0, #1F6F78 100%);
+    background-image: radial-gradient(100% 100% at 100% 0, #00fcfc 0, #5698f9 100%);
     border: 0;
     border-radius: .5rem;
     box-shadow: rgba(45, 35, 66, .4) 0 1px 3px, rgba(45, 35, 66, .3) 0 7px 13px -3px, rgba(58, 65, 111, .5) 0 -3px 0 inset;
@@ -179,16 +179,8 @@ h3 {
 /* GILSON: */
 
 .encabezado {
-    background: hsla(180, 56%, 51%, 1);
-
-
-    background: radial-gradient(circle, hsla(180, 56%, 51%, 1) 24%, hsla(186, 60%, 40%, 1) 100%);
-
-    background: -moz-radial-gradient(circle, hsla(180, 56%, 51%, 1) 24%, hsla(186, 60%, 40%, 1) 100%);
-
-    background: -webkit-radial-gradient(circle, hsla(180, 56%, 51%, 1) 24%, hsla(186, 60%, 40%, 1) 100%);
-
-    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#3BC7C7", endColorstr="#2998A4", GradientType=1);
+    background: rgb(86,152,249);
+    background: linear-gradient(90deg, rgba(86,152,249,0.9697128851540616) 0%, rgba(86,192,214,1) 51%, rgba(86,152,249,1) 99%);
 
     max-width: 100%;
     padding: 15px;
