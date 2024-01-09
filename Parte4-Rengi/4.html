@@ -12,14 +12,35 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e538c04e55.js" crossorigin="anonymous"></script>
 
 </head>
 <body>
 
-    <header>
-    </header>
+  <header class="container encabezado">
+    <div class="row">
+        <div class="col-md-4 text-center">
+            <i class="fa-regular fa-envelope" style="margin: 8px 10px 0 10px;"></i>
+            ABMODEL
+        </div>
+        <div class="col-md-4 text-center">
+            <i class="fa-solid fa-laptop-code" style="margin: 8px 10px 0 10px;"></i>
+            Proyecto Primer Bimestre
+        </div>
+        <div class="col-md-4 text-center">
+            <a href="https://twitter.com" style="color: #000;"><i class="fa-brands fa-twitter"
+                    style="margin: 8px 10px 0 10px;"></i></a>
+            <a href="https://www.facebook.com/" style="color: #000;"><i class="fa-brands fa-facebook"
+                    style="margin: 8px 10px 0 10px;"></i></a>
+            <a href="https://www.instagram.com/" style="color: #000;"><i class="fa-brands fa-instagram"
+                    style="margin: 8px 10px 0 10px;"></i></a>
+            <a href="https://www.linkedin.com/" style="color: #000;"><i class="fa-brands fa-linkedin"
+                    style="margin: 8px 10px 0 10px;"></i></a>
+        </div>
+    </div>
+</header>
 
-    <main>
+  <main class="content" style="margin-bottom: 30px; padding-bottom: auto;">
         <section class="contenedor">
             <h1 class="mt-4 mb-5">Chinchulin</h1>
             <h2 class="mb-3"> Saldo Actual: $450</h2>
@@ -32,8 +53,8 @@
             <h1 class="d-flex mt-5 mx-3">Lista De Movimientos</h1>
             <label class="mt-3 mb-1 h3 mx-3 " for="fechaFiltro">Filtrar por fecha:</label>
             <input type="date" id="fechaFiltro">
-            <div class="table-responsive-sm mt-4 mx-3">
-                <table class="table table-sm table-hover table-info ">
+            <div class="table-responsive mt-4 mx-3">
+                  <table class="table contenedor-terciario table-hover table-bordered" style="margin-bottom: 100px;">
                     <caption>Lista de Movimientos</caption>
                     <thead>
                       <tr>
@@ -46,8 +67,8 @@
                     </thead>
                     <tbody>
                         <th scope="row">1</th>
-                        <td>PICHINCHA</td>
-                        <td>COMIDA</td>
+                        <td >PICHINCHA</td>
+                        <td>NOMINA</td>
                         <td>08-12-2023</td>
                         <td>+ $1000</td>
                       </tr>
@@ -66,15 +87,25 @@
                         <td>- $250</td>
                       </tr>
                     </tbody>
+
                   </table>
+
             </div>
-            
-
-            
-                
-
         </section>
-    </main>
+  </main>
+
+  <footer class="container pie encabezado">
+    <div class="row">
+        <div class="col-md-6">
+            © Copyright Grupo 6. All Rights Reserved
+        </div>
+
+        <div class="col-md-6 text-center text-md-end">
+            Designed by Grupo 6
+        </div>
+    </div>
+</footer>
+ 
     
 
 
