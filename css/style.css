@@ -181,19 +181,14 @@ h3 {
 .encabezado {
     background: rgb(86,152,249);
     background: linear-gradient(90deg, rgba(86,152,249,0.9697128851540616) 0%, rgba(86,192,214,1) 51%, rgba(86,152,249,1) 99%);
-
     max-width: 100%;
     padding: 15px;
 }
 
 .pie{
-    max-width: 100%;
-    max-height: 100%;
     position:fixed;
     bottom: 0;
-    padding: 15px;
     margin-top: 100px;
-    max-width: 100%;
 }
 
 
