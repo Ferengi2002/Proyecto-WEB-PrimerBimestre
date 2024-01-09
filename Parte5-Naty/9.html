@@ -36,9 +36,44 @@
     </header>
     <main>
         <div class="container d-flex align-items-center justify-content-center mt-5">
-            <div class="d-inline-block text-center p-5 bg-white">
+            <div class="d-inline-block text-center p-5 bg-white ">
                 <h2 class="fw-bold">Ingresos / Egresos</h2>
                 <div class="mt-3 mb-0">
+                    <div class="input-group input-group-lg mt-3 mb-0">
+                        <span class="input-group-text" id="cuenta">Cuenta</span>
+                        <input type="text" class="form-control" placeholder="Ingrese su cuenta">
+                    </div> 
+                    <div class="input-group input-group-lg mt-3 mb-0">
+                        <span class="input-group-text" id="monto">Monto</span>
+                        <input type="text" class="form-control" placeholder="Ingrese el monto" pattern="-?[0-9]+" title="Por favor ingrese un número válido" required>
+                    </div>
+
+                    <div class="input-group input-group-lg mt-3 mb-0">
+                        <span class="input-group-text" id="fecha">Fecha</span>
+                        <input type="date" class="form-control" id="fecha" placeholder="Ingrese la fecha" required>
+                    </div>
+                    <div class="input-group input-group-lg mt-3 mb-0">
+                        <span class="input-group-text" id="categoria">Categoria</span>
+                        <select class="form-select form-select-lg">
+                            <option value="">Seleccione una categoría</option>
+                            <option value="dos">Nómina</option>
+                            <option value="tres">Universidad</option>
+                            <option value="cuatro">Efectivo</option>
+                        </select>
+                    </div>
+                    <div class="input-group input-group-lg mt-3 mb-0">
+                        <span class="input-group-text" id="Concepto">Concepto</span>
+                        <textarea  id="Concepto" class="form-control" placeholder="Agregue una descripción"></textarea>
+                    </div>
+                </div>
+                <div class="mt-3 mb-0 text-center ">
+                    <a href="#" class="btn btn-primary btn-sm boton mx-4">Guardar</a>
+                    <a href="#" class="btn btn-primary btn-sm boton mx-4 mb-5">Cancelar</a>
+                </div>
+            </div>
+
+            <!--
+                 <div class="mt-3 mb-0">
                     <div class="mt-3 mb-0 flex-column">
                         <label for="cuenta">Cuenta* :</label>
                         <input type="text" id="cuenta" placeholder="Ingrese su cuenta">
@@ -70,6 +105,9 @@
                     <a href="#" class="btn btn-primary btn-sm boton mx-4">Cancelar</a>
                 </div>
             </div>
+            -->
+            
+            
         </div>    
     </main>
 </body>
