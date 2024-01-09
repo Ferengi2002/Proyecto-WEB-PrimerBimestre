@@ -64,6 +64,11 @@ h3 {
     font-size: 2rem;
     color: #6495ed;
 }
+.fondo {
+    background-color: var(--fondo);
+    filter: blur(5px);
+    
+}
 
 .contenedor-primario {
     background-color: var(--terciario);
